@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RestFul</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="ui center aligned container">
+      <h1 class="ui header">RestFul Routes</h1>
+      <table class="ui selectable celled table">
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>URL</th>
+            <th>HTTP Verb</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>index</td>
+            <td>/pokemons</td>
+            <td>GET</td>
+            <td>Display all the pokemons</td>
+          </tr>
+          <tr>
+            <td>new</td>
+            <td>/pokemons/new</td>
+            <td>GET</td>
+            <td>Render a form to create new pokemon</td>
+          </tr>
+          <tr>
+            <td>create</td>
+            <td>/pokemons</td>
+            <td>POST</td>
+            <td>Add new pokemon in the dabatase</td>
+          </tr>
+          <tr>
+            <td>show</td>
+            <td>/pokemons/:id</td>
+            <td>GET</td>
+            <td>Display all the data related to one pokemon</td>
+          </tr>
+          <tr>
+            <td>edit</td>
+            <td>/pokemons/:id/edit</td>
+            <td>GET</td>
+            <td>Render a form containing the data related to one pokemon, user can modify the data in form</td>
+          </tr>
+          <tr>
+            <td>update</td>
+            <td>/pokemons/:id</td>
+            <td>PUT</td>
+            <td>Update the data related to one pokemon in the database</td>
+          </tr>
+          <tr>
+            <td>delete</td>
+            <td>/pokemons/:id</td>
+            <td>DELETE</td>
+            <td>Delete one pokemon in the database</td>
+          </tr>
+        </tbody>
+      </div>
+    </div>
+  </body>
+</html>
